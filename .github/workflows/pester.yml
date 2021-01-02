@@ -12,7 +12,6 @@ jobs:
         Import-Module Pester -MinimumVersion 5.0
         $cfg = [PesterConfiguration]@{ Run = @{ Exit = $true} }
         Invoke-Pester -Configuration $cfg
-        Get-LocalUser
       shell: powershell
   Test-CoreEdition:
     strategy:
