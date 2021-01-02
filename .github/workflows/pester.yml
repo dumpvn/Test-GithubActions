@@ -10,7 +10,7 @@ jobs:
     - name: Run Pester tests
       run: |
         Import-Module Pester -MinimumVersion 5.0
-        $cfg = [PesterConfiguration]@{Run=@{Exit=$true}}
+        $cfg = [PesterConfiguration]@{ Run = @{ Exit = $true} }
         Invoke-Pester -Configuration $cfg
       shell: powershell
   Test-CoreEdition:
