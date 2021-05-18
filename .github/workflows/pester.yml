@@ -1,7 +1,9 @@
 name: Pester Tests
 on:
   push:
-    branches: [ master ]
+    branches: [ master, pester ]
+  workflow_dispatch:
+    
 jobs:
   Test-DesktopEdition:
     runs-on: windows-latest
